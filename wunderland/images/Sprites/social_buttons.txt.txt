@@ -1,0 +1,11 @@
+.parent-element {
+      background:url(result.png);
+}
+ 
+Facebook	background-position: 0px 0px;
+ 
+Google+		background-position: 0px -50px;
+ 
+Twitter		background-position: 0px -100px;
+ 
+RSS		background-position: 0px -150px;

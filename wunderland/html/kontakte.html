@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="de">
+    
+<head>
+    <!-- Damit die umlaute wie ä,ö,ü,usw. dargestellt werden können -->
+    <meta charset="utf-8">  <!-- meta END -->
+    <!-- Der Titel der Seite -->
+    <title>Kontakte</title>  
+    <!-- Metadaten für die Beschreibung des Content -->
+    <meta name="description" content="Erleben Sie die wunderbare Welt unseres Freizeitparks">   
+    <!-- Andere Variante für den Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head> 
+    
+<body> 
+    <div id="wrapper">  
+        <header id="header">
+        <div id="logoBox">
+<!--                <img id="logo" src="images/Logo.png" alt="logo">-->
+                <a id="logoLink" href="../index.html">
+                    <img id="logo" src="../images/Logo_wunderland.gif" alt="logo">
+            </a>
+            </div>  
+            <div id="claimBox">
+                <span id="claimLeft">Wenn dein Besuch ...</span>
+                <span id="claimRight">... zum Abenteuer wird .</span>
+            </div>
+        </header>
+        <main id="main">
+        <h1>Kontakte</h1>
+            
+            <p>Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten.</p>
+
+
+            <p>Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.</p>
+
+
+            <p>Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden.</p>
+            <br>
+            
+            <form action="#" method="post">
+                
+<!--                Gender Auswahl mit radio-->
+                <div id="genderBox">
+                    <!--female-->
+                    <label for="female">Frau</label>
+                    <input type="radio" name="gender" value="female" id="female" checked>
+                    <!--male-->
+                    <label for="male">Herr</label>
+                    <input type="radio" name="gender" value="male" id="male">
+                </div>
+                
+<!--                Personalien Textfeldeingabe-->
+                <!--Vorname-->
+                <label for="vorname">Vorname:</label>               
+                <input type="text" name="vorname" id="vorname" placeholder="Vorname">
+                
+                <!--Nachname-->
+                <label for="nachname">Nachname:</label>             
+                <input type="text" name="nachname" id="nachname" placeholder="Nachname" required>
+                
+                <!--E-Mail-->
+                <label for="email">E-Mail:</label>                  
+                <input type="email" name="email" id="email" placeholder="example@email.de">
+                
+<!--                Gründe mit Dropdown Menü und die Optionen-->
+                <!--Grund mit Optionen-->
+                <label for="reason">Grund:</label>                  
+                <select name="reason" id="reason">
+                    <!--Lob-->
+                    <option value="lob">Lob</option>
+                    <!-- Kritik-->
+                    <option value="kritik">Kritik</option>
+                    <!--Anregung-->
+                    <option value="anregung" selected>Anregung</option>
+                </select>
+                
+<!--                Textfeld-->
+                <label for="text">Nachricht:</label> 
+                <textarea id="text" name="text" placeholder="Tippen Sie hier Ihre Nachricht ein."></textarea>
+                
+<!--                Checkbox-->
+                <div id="newsBox">
+                <!--Checkbox für Newsletter-->
+                    <input type="checkbox" name="newsletter" id="newsletter" value="confirmNews">
+                    <label for="newsletter">Ich möchte jeden Tag nervige Mails von Ihnen bekommen!</label>
+                </div>
+                
+<!--                Buttons fürs Absenden//zurücksetzten-->
+                <div id="buttonBox">
+                    <!--Button zum Zurücksetzen-->
+                    <input type="reset" name="reset" value="Zurücksetzen">
+                    <!--Button zum Absenden-->
+                    <input type="submit" name="submit" value="Absenden">
+                </div>
+                
+                
+            </form>
+
+        </main>
+        <div id="footermask"></div>
+        <footer id="footer">
+            <div id="socialBox">
+<!--                FACEBOOK-->
+                <a href="https://de-de.facebook.com/" target="_blank"><img src="../images/socialSprite.png" alt="socialSprites" id="fb"></a>
+<!--                TWITTER-->
+                <a href="https://twitter.com/" target="_blank"><img src="../images/socialSprite.png" alt="socialSprites" id="tw"></a>
+<!--                GOOGLE PLUS-->
+                <a href="https://plus.google.com/explore" target="_blank"><img src="../images/socialSprite.png" alt="socialSprites" id="gplus"></a>
+<!--                RSS FEED-->
+                <a href="https://www.rss.com/" target="_blank"><img src="../images/socialSprite.png" alt="socialSprites" id="rss"></a>
+            </div>
+            <address id="address">2017 &copy; &#124; <a href="#">Die Wunderland GmbH</a></address>
+        </footer>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="../index.html" class="main">Home</a></li>
+                <li><a href="attraktionen.html" class="main">Attraktionen</a>
+                    <ul class="subNav">
+                        <li><a href="attraktionen/riesenrad.html">Riesenrad</a></li>       
+                        <li><a href="attraktionen/achterbahn.html">Achterbahn</a></li>       
+                        <li><a href="attraktionen/baellepool.html">Bällepool</a></li>       
+                        <li><a href="attraktionen/geisterhaus.html">Geisterhaus</a></li>       
+                    </ul>
+                </li>
+                <li><a href="impressionen.html" class="main">Impressionen</a></li>
+                <li><a href="wunderlichkeiten.html" class="main">Wunderlichkeiten</a>
+                    <ul class="subNav">
+                        <li><a href="../html/wunderlichkeiten.html">Zuckerwatte</a></li>       
+                        <li><a href="../html/wunderlichkeiten.html#currywurst">Currywurst</a></li>       
+                        <li><a href="../html/wunderlichkeiten.html#kandierterApfel">kandierter Apfel</a></li>       
+                    </ul>
+                </li>
+                <li><a href="preise.html" class="main">Preise</a>
+                    <ul class="subNav">
+                        <li><a href="#">Riesenrad</a></li>             
+                    </ul>
+                </li>
+                <li><span class="main">Kontakte</span></li>
+            </ul>
+        </nav>
+    </div>  <!-- End Wrapper -->
+</body>
+    
+</html>

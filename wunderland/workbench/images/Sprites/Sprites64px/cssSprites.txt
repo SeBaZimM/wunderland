@@ -1,0 +1,13 @@
+.parent-element {
+      background:url(result.png);
+}
+Then use these offsets to display each image:
+To display this image...	...use this style
+ 
+FB	background-position: 0px 0px;
+ 
+Twitter	background-position: 0px -74px;
+ 
+G+	background-position: 0px -148px;
+ 
+RSS	background-position: 0px -222px;

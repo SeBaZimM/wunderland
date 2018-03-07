@@ -1,0 +1,44 @@
+//KEYFRAMES FADING-------------------------------------------------------------
+@keyframes fadeLittleBalloons {
+    0%      {opacity:    0;}
+    25%     {opacity:    1;}
+    100%    {opacity: 0;}
+}
+
+@-moz-keyframes fadeLittleBalloons {
+    0%      {opacity:    0;}
+    25%     {opacity:    1;}
+    100%    {opacity: 0;}
+}
+
+@-webkit-keyframes fadeLittleBalloons {
+    0%      {opacity:    0;}
+    25%     {opacity:    1;}
+    100%    {opacity: 0;}
+}
+
+.fader {
+    animation-name: fadeLittleBalloons;
+    animation-duration: 4s;
+}
+
+//KEYFRAMES FlYING-------------------------------------------------------------
+@keyframes flyLittleBalloons {
+    from    {top: 0; opacity:    1;}
+    to      {top: -50px;}
+}
+
+@-moz-keyframes flyLittleBalloons {
+    from    {top: 0; opacity:    1;}
+    to      {top: -50px;}
+}
+
+@-webkit-keyframes flyLittleBalloons {
+    from    {top: 0; opacity:    1;}
+    to      {top: -50px;}
+}
+
+.flyer {
+    animation-name: flyLittleBalloons;
+    animation-duration: 2s;
+}

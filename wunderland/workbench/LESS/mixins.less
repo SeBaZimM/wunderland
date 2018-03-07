@@ -1,0 +1,90 @@
+.size(@width; @height: auto) {
+    width: @width;
+    height: @height;
+}
+
+.colorStyle(@backgroundColor: transparent; @foregroundColor: inherit) {
+    background-color: @backgroundColor;
+    color: @foregroundColor;
+}
+
+.borderRadius(...) {
+    -webkit-border-radius: @arguments;
+    -moz-border-radius: @arguments;
+    border-radius: @arguments;
+}
+
+.border(...) {
+    border: @arguments;
+}
+
+.backgroundImage {
+    background-color: #dddddd;
+    color: black;
+    background-image: url(../images/pexels-BG.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+//.backgroundImage {
+//    background-color: #dddddd;
+//    color: black;
+//    background-image: url(../images/pexels-BG.jpg);
+//    background-repeat: no-repeat;
+//    background-attachment: fixed;
+//    background-size: cover;
+//}
+
+.font(@fontFamily; @fontSize; @lineHeight: 1.3em) {
+    font-family: @fontFamily;
+    font-size: @fontSize;
+    line-height: @lineHeight;
+}
+
+//.gradient(0Deg; 90Deg; #000000, transparent)
+.gradient(@oldDirection; @newDirection; @rest...) {
+    background-image: -webkit-linear-gradient(@oldDirection, @rest);
+    background-image: -mot-linear-gradient(@oldDirection, @rest);
+    background-image: linear-gradient(@newDirection, @rest);
+}
+
+.transition(@attribut; @duration) {
+    -webkit-transition: @attribut @duration;
+    transition: @attribut @duration;
+}
+
+.mixin(@position; @padding: none; @margin: none) {
+    position: @position;
+    padding: @padding;
+    margin: @margin;
+}
+
+.textStyle(@textAlign; @textShadow) {
+    text-align: @textAlign;
+    text-shadow: @textShadow;
+}
+
+.columnCount {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.columnCountRespons {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
+.clearfix {
+    
+    &after {
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+}
